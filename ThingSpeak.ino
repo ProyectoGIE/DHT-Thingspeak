@@ -3,9 +3,9 @@ c#include <DHT.h>
  
 
 /*-----------------ESP8266 Configuración WiFi---------------*/
-String apiKey = "6SZZRSYG7LGA1L85";                   // Sustituir con tu API del canal de thingspeak
-const char* ssid = "Punto acceso";                    //Poner el SSID de la WiFi
-const char* password = "436a6a2a734166663146396642";  //Sustituir por el password de la WiFi
+String apiKey = "APIKEY";                   // Sustituir con tu API del canal de thingspeak
+const char* ssid = "SSID";                    //Poner el SSID de la WiFi
+const char* password = "PASSWORD";  //Sustituir por el password de la WiFi
 const char* server = "api.thingspeak.com";
 /*----------------------------------------------------------*/
 
