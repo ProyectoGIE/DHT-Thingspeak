@@ -7,6 +7,7 @@ String apiKey = "6SZZRSYG7LGA1L85";                   // Sustituir con tu API de
 const char* ssid = "Punto acceso";                    //Poner el SSID de la WiFi
 const char* password = "436a6a2a734166663146396642";  //Sustituir por el password de la WiFi
 const char* server = "api.thingspeak.com";
+/*----------------------------------------------------------*/
 
 /*------------------------DHT SENSOR------------------------*/
 #define DHTPIN D4           //Pin al que se encuentra conectado el pin de datos del DHT
@@ -86,7 +87,7 @@ Serial.println("");
 client.stop();
  
 Serial.println("Esperando 20 secs");
-// thingspeak needs at least a 15 sec delay between updates
-// 20 seconds to be safe
+// ThingSpeak necesita al menos 15 segundos entre cada subida
+// Ponemos 20 para estar más seguros
 delay(20000);
 }
