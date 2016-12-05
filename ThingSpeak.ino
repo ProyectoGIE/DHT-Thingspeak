@@ -1,4 +1,4 @@
-c#include <DHT.h>
+#include <DHT.h>
 #include <ESP8266WiFi.h>
  
 
