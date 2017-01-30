@@ -1,11 +1,36 @@
+/***********************************************************************
+***********************************************************************
+ *           
+ *           **********      **********     **********
+ *           **********      **********     **********
+ *           **                  **         **
+ *           **                  **         **
+ *           **   *****          **         **********
+ *           **   *****          **         **********
+ *           **      **          **         ** 
+ *           **      **          **         **
+ *           **********  **  ********** **  **********
+ *           **********  **  ********** **  **********
+ *               GRUPO DE INNOVACIÓN EDUCATIVA
+************************************************************************ 
+************************************************************************
+                    ESTACIÓN METEOROLÓGICA
+     ESTE PROYECTO HA SIDO REALIZADO PARA EL PROYECTO GLOBE - CLIMA
+                        AGOSTO DE 2016
+*/
+//  Este código lee los datos de un sensor DHT22 y los envía a la web ThingSpeak.com 
+//  con el fin de enviarlos a través de una cuenta de Twitter
+//  Para este programa, debemos tener creada previamente una cuenta en ThingSpeak.com
+
+
 #include <DHT.h>
 #include <ESP8266WiFi.h>
  
 
 /*-----------------ESP8266 Configuración WiFi---------------*/
-String apiKey = "APIKEY";                   // Sustituir con tu API del canal de thingspeak
+String apiKey = "APIKEY";                     // Sustituir con tu API del canal de thingspeak
 const char* ssid = "SSID";                    //Poner el SSID de la WiFi
-const char* password = "PASSWORD";  //Sustituir por el password de la WiFi
+const char* password = "PASSWORD";            //Sustituir por el password de la WiFi
 const char* server = "api.thingspeak.com";
 /*----------------------------------------------------------*/
 
